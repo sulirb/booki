@@ -16,7 +16,7 @@ body {
   color: #0065fc;
 }
 
-section ul {
+.taglist {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
