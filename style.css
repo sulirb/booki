@@ -26,3 +26,9 @@ body {
 .filtre {
   display: flex;
 }
+
+.info i {
+  margin-right: 10px;
+  color: #0065fc;
+  font-size: 12px;
+}
