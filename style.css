@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+section li {
+  display: flex;
+  align-items: center;
+  vertical-align: auto;
+}
+
+section li i {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #0065fc;
+}
+
+section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.filtre {
+  display: flex;
+}
