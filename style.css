@@ -4,13 +4,13 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-section li {
+.tag {
   display: flex;
   align-items: center;
   vertical-align: auto;
 }
 
-section li i {
+.tag i {
   margin-right: 10px;
   vertical-align: middle;
   color: #0065fc;
