@@ -4,6 +4,10 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+.filtre {
+  display: flex;
+}
+
 .tag {
   display: flex;
   align-items: center;
@@ -23,12 +27,12 @@ body {
   width: 50%;
 }
 
-.filtre {
-  display: flex;
-}
-
 .info i {
   margin-right: 10px;
   color: #0065fc;
   font-size: 12px;
+}
+
+.heberg i {
+  color: #0065fc;
 }
