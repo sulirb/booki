@@ -2,12 +2,40 @@
 
 body {
   font-family: Raleway, sans-serif;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .logo img {
   position: absolute;
   width: 61.09px;
   height: 19px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 46px;
+}
+
+.intro {
+  margin-top: 63px;
 }
 
 .filtre {
@@ -40,14 +68,14 @@ body {
 }
 
 .heberg i,
-.popular i {
+.popular i,
+.activities i {
   color: #0065fc;
 }
 
 .heberg {
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding-left: 40px;
   float: left;
   width: 66%;
   position: relative;
