@@ -27,9 +27,13 @@
       <p>En plein centre ville ou en pleine nature</p>
       <!--BOUTON RECHERCHE A METTRE-->
       <div class="recherche">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>Marseille, France</p>
-        RECHERCHE
+        <div class="loca">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <form action="/search">
+          <input type="text" name="query" placeholder="Marseille, France" />
+          <button type="submit">Rechercher</button>
+        </form>
       </div>
     </section>
 
@@ -37,20 +41,20 @@
     <section>
       <div class="filtre">
         <h3>Filtres</h3>
-        <ul class="taglist">
-          <li class="tag">
+        <ul class="listebalise">
+          <li class="balise">
             <i class="fa-solid fa-money-bill-wave"></i>
             <p>Economique</p>
           </li>
-          <li class="tag">
+          <li class="balise">
             <i class="fa-solid fa-person"></i>
             <p>Famillal</p>
           </li>
-          <li class="tag">
+          <li class="balise">
             <i class="fa-solid fa-heart"></i>
             <p>Romantique</p>
           </li>
-          <li class="tag">
+          <li class="balise">
             <i class="fa-solid fa-dog"></i>
             <p>Animaux autorisés</p>
           </li>
@@ -175,7 +179,7 @@
       </article>
     </section>
     <!-- ACTIVITES -->
-    <section class="activities">
+    <section class="activites">
       <h2>Activités à Marseille</h2>
 
       <article>

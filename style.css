@@ -26,6 +26,9 @@ body {
 .menu a {
   text-decoration: none;
   color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .menu a:hover {
@@ -38,27 +41,83 @@ body {
   margin-top: 63px;
 }
 
-.filtre {
+.intro p {
+  margin-top: -10px;
+}
+
+.recherche {
   display: flex;
 }
 
-.tag {
+.loca {
+  background-color: #f2f2f2;
+  height: 49px;
+  width: 50px;
+  border-radius: 15px 0px 0px 15px;
   display: flex;
   align-items: center;
-  vertical-align: auto;
+  justify-content: space-around;
 }
 
-.tag i {
-  margin-right: 10px;
+.recherche input {
+  width: 225px;
+  height: 45px;
+  font-size: 18px;
+  border: 1px solid #f2f2f2;
+}
+
+.recherche ::placeholder {
+  font-weight: 700;
+  color: #000000;
+  padding-left: 15px;
+}
+
+.recherche button {
+  position: absolute;
+  width: 132px;
+  height: 49px;
+  background-color: #0065fc;
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.listebalise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.balise {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  margin-right: 50px;
+  padding: 0px 15px 0px 10px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.balise i {
+  margin-left: 8px;
+  margin-right: 15px;
   vertical-align: middle;
   color: #0065fc;
 }
 
-.taglist {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
+.balise:hover {
+  background-color: #deebff;
 }
 
 .info i {
@@ -106,7 +165,7 @@ body {
   width: 137px;
 }
 
-.activities img {
+.activites img {
   height: 444.51px;
   width: 302px;
 }
