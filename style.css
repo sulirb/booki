@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
-
-body {
-  font-family: Raleway, sans-serif;
+@import url("./debug.css");
+.body {
   padding: 25px 50px 0px;
+}
+
+:root {
+  font-family: Raleway, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .logo img {
@@ -90,8 +100,10 @@ body {
 
 .listebalise {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .balise {
@@ -99,9 +111,9 @@ body {
   align-items: center;
   border: 2px solid #d9d9d9;
   border-radius: 25px;
-  margin-right: 50px;
-  padding: 0px 15px 0px 10px;
-  height: 40px;
+  margin-right: 20px;
+  padding: 0px 10px;
+  min-height: 40px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -112,6 +124,7 @@ body {
   margin-right: 15px;
   vertical-align: middle;
   color: #0065fc;
+  font-size: 20px;
 }
 
 .balise:hover {
@@ -132,19 +145,20 @@ body {
   font-size: 12px;
 }
 
-.popu i,
-.activites i {
-  color: #0065fc;
+.mystar {
+  font-size: 12px;
+}
+
+.logements {
+  display: flex;
+  justify-content: space-between;
 }
 
 .heberg {
-  float: left;
-  margin-top: 20px;
   padding: 12px 40px 12px 40px;
   background-color: #f2f2f2;
   border-radius: 20px;
   max-width: 880px;
-  max-height: 626px;
 }
 
 .heberg img {
@@ -168,7 +182,7 @@ body {
   color: #000000;
 }
 
-.heberg i {
+.heberg .mystar {
   padding-left: 10px;
   height: 5px;
   width: 5px;
@@ -195,13 +209,10 @@ body {
 
 /*PROGRESSION ACTUELLE*/
 .popu {
-  float: right;
-  margin-top: 20px;
   padding: 12px 50px 12px 40px;
   background-color: #f2f2f2;
   border-radius: 20px;
   max-width: 420px;
-  max-height: 626px;
 }
 
 .popu img {
@@ -223,7 +234,13 @@ body {
   justify-content: space-between;
 }
 
+.popu i,
+.activites i {
+  color: #0065fc;
+}
+
 .activites img {
   height: 444.51px;
   width: 302px;
+  object-fit: cover;
 }

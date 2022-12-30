@@ -10,14 +10,14 @@
     ></script>
     <meta charset="UTF-8" />
   </head>
-  <body>
+  <body class="booki body">
     <!---LOGO ET MENU-->
     <header>
       <div class="logo"><img src="assets\Images\logo\Booki.png" /></div>
       <nav>
         <ul class="menu">
-          <li><a href="#">Hébergements</a></li>
-          <li><a href="#">Activités</a></li>
+          <li><a href="#hebergement">Hébergements</a></li>
+          <li><a href="#activite">Activités</a></li>
         </ul>
       </nav>
     </header>
@@ -44,19 +44,19 @@
         <ul class="listebalise">
           <li class="balise">
             <i class="fa-solid fa-money-bill-wave"></i>
-            <p>Economique</p>
+            <span>Economique</span>
           </li>
           <li class="balise">
             <i class="fa-solid fa-person"></i>
-            <p>Famillal</p>
+            <span>Famillal</span>
           </li>
           <li class="balise">
             <i class="fa-solid fa-heart"></i>
-            <p>Romantique</p>
+            <span>Romantique</span>
           </li>
           <li class="balise">
             <i class="fa-solid fa-dog"></i>
-            <p>Animaux autorisés</p>
+            <span>Animaux autorisés</span>
           </li>
         </ul>
       </div>
@@ -68,142 +68,145 @@
     </section>
 
     <!-- HEBERGEMENT -->
-    <section class="heberg">
-      <h2>Hébergements à Marseille</h2>
-      <div class="hebergflex">
-        <article class="hebergtab">
-          <a href="#"
-            ><img
-              src="assets/Images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-              alt="Auberge La Canebière"
-            />
-            <h4>Auberge La Canebière</h4>
-            <p>Nuit à partir de 25€</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </a>
-        </article>
-        <article class="hebergtab">
-          <a href="#"
-            ><img
-              src="assets/Images\hebergements\4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt="Hôtel du Port"
-            />
-            <h4>Hôtel du Port</h4>
-            <p>Nuit à partir de 52€</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </a>
-        </article>
-        <article class="hebergtab">
-          <a href="#"
-            ><img
-              src="assets\Images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
-              alt="Hôtel les Mouettes"
-            />
-            <h4>Hôtel les Mouettes</h4>
-            <p>Nuit à partir de 76€</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </a>
-        </article>
-        <article class="hebergtab">
-          <a href="#"
-            ><img
-              src="assets\Images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-              alt="Hôtel de la mer"
-            />
-            <h4>Hôtel de la mer</h4>
-            <p>Nuit à partir de 46€</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </a>
-        </article>
-        <article class="hebergtab">
-          <a href="#"
-            ><img
-              src="assets\Images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-              alt="Auberge Le Panier"
-            />
-            <h4>Auberge Le Panier</h4>
-            <p>Nuit à partir de 23€</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </a>
-        </article>
-        <article class="hebergtab">
-          <a href="#"
-            ><img
-              src="assets\Images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-              alt="Hôtel chez Amina"
-            />
-            <h4>Hôtel Chez Amina</h4>
-            <p>Nuit à partir de 96€</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </a>
-        </article>
-      </div>
-      <h3>Afficher plus</h3>
-    </section>
+    <div class="logements">
+      <section class="heberg">
+        <h2 id="hebergement">Hébergements à Marseille</h2>
+        <div class="hebergflex">
+          <article class="hebergtab">
+            <a href="#"
+              ><img
+                src="assets/Images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="Auberge La Canebière" />
+              <h4>Auberge La Canebière</h4>
+              <p>Nuit à partir de 25€</p>
+              <div class="etoile">
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i></div
+            ></a>
+          </article>
+          <article class="hebergtab">
+            <a href="#"
+              ><img
+                src="assets/Images\hebergements\4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt="Hôtel du Port" />
+              <h4>Hôtel du Port</h4>
+              <p>Nuit à partir de 52€</p>
+              <div class="etoile">
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i></div
+            ></a>
+          </article>
+          <article class="hebergtab">
+            <a href="#"
+              ><img
+                src="assets\Images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt="Hôtel les Mouettes" />
+              <h4>Hôtel les Mouettes</h4>
+              <p>Nuit à partir de 76€</p>
+              <div class="etoile">
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i></div
+            ></a>
+          </article>
+          <article class="hebergtab">
+            <a href="#"
+              ><img
+                src="assets\Images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt="Hôtel de la mer" />
+              <h4>Hôtel de la mer</h4>
+              <p>Nuit à partir de 46€</p>
+              <div class="etoile">
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i></div
+            ></a>
+          </article>
+          <article class="hebergtab">
+            <a href="#"
+              ><img
+                src="assets\Images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                alt="Auberge Le Panier"
+              />
+              <h4>Auberge Le Panier</h4>
+              <p>Nuit à partir de 23€</p>
+              <div class="etoile">
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+              </div>
+            </a>
+          </article>
+          <article class="hebergtab">
+            <a href="#"
+              ><img
+                src="assets\Images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                alt="Hôtel chez Amina" />
+              <h4>Hôtel Chez Amina</h4>
+              <p>Nuit à partir de 96€</p>
+              <div class="etoile">
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i>
+                <i class="fa-solid fa-star mystar"></i></div
+            ></a>
+          </article>
+        </div>
+        <h3>Afficher plus</h3>
+      </section>
 
-    <!-- POPULAIRE -->
-    <section class="popu">
-      <h2>Les plus populaires</h2>
-      <i class="fa-solid fa-chart-line"></i>
-      <div class="popuflex">
-        <article class="poputab">
-          <img
-            src="assets\Images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-          />
-          <h4>Hôtel le Soleil du Matin</h4>
-          <p>Nuit à partir de 128€.</p>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </article>
-        <article class="poputab">
-          <img
-            src="assets\Images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg"
-          />
-          <h4>Chambres d'hôtes Au coeur de l'eau</h4>
-          <p>Nuit à partir de 71€.</p>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </article>
-        <article class="poputab">
-          <img
-            src="assets\Images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-          />
-          <h4>Hôtel bleu et blanc</h4>
-          <p>Nuit à partir de 68€.</p>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </article>
-      </div>
-    </section>
+      <!-- POPULAIRE -->
+      <section class="popu">
+        <h2>Les plus populaires</h2>
+        <i class="fa-solid fa-chart-line"></i>
+        <div class="popuflex">
+          <article class="poputab">
+            <img
+              src="assets\Images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            />
+            <h4>Hôtel le Soleil du Matin</h4>
+            <p>Nuit à partir de 128€.</p>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+          </article>
+          <article class="poputab">
+            <img
+              src="assets\Images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg"
+            />
+            <h4>Chambres d'hôtes Au coeur de l'eau</h4>
+            <p>Nuit à partir de 71€.</p>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+          </article>
+          <article class="poputab">
+            <img
+              src="assets\Images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+            />
+            <h4>Hôtel bleu et blanc</h4>
+            <p>Nuit à partir de 68€.</p>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+            <i class="fa-solid fa-star mystar"></i>
+          </article>
+        </div>
+      </section>
+    </div>
 
     <!-- ACTIVITES -->
     <section class="activites">
-      <h2>Activités à Marseille</h2>
-
+      <h2 id="activite">Activités à Marseille</h2>
       <article>
         <img
           src="assets\Images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
