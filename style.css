@@ -35,7 +35,6 @@
 .menu a {
   text-decoration: none;
   color: #000000;
-  font-weight: 500;
 }
 
 .menu a:hover {
@@ -71,7 +70,7 @@
 
 .recherche input {
   width: 225px;
-  height: 45px;
+  height: 49px;
   font-size: 18px;
   border: 1px solid #f2f2f2;
 }
@@ -156,12 +155,19 @@
   color: #0065fc;
 }
 
-/*HEBERGEMENT*/
+/* CONTENEUR*/
 .logements {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
+.etoile {
+  display: flex;
+  flex-direction: row;
+}
+
+/*HEBERGEMENT*/
 .heberg {
   padding: 12px 40px 12px 40px;
   background-color: #f2f2f2;
@@ -204,18 +210,13 @@
   color: #000000;
 }
 
-.heberg .mystar {
-  padding-left: 10px;
-  height: 5px;
-  width: 5px;
+.heberg .etoile {
+  padding: 0px 0px 10px 10px;
+  margin-top: -10px;
 }
 
 .hebergtab a {
   text-decoration: none;
-}
-
-.etoile {
-  margin-top: -10px;
 }
 
 /*POPULAIRE*/
@@ -232,35 +233,19 @@
 .poputab {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 30px;
   border: 2px solid #ffffff;
   border-radius: 20px;
   box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  height: 150px;
-  width: 380px;
   color: #000000;
-}
-
-.popu h2 {
-  display: inline-block;
-  margin-right: 120px;
 }
 
 .popu .graph {
   display: flex;
   align-items: center;
-}
-
-.popu h4 {
-  margin-block-start: 15px;
-  margin-block-end: 0px;
-}
-
-.popu p {
-  margin-block-start: 5px;
-  margin-block-end: 0px;
+  color: #0065fc;
 }
 
 .popu img {
@@ -271,23 +256,65 @@
   border-radius: 20px 0px 0px 20px;
 }
 
-.popu .mystar {
-  padding-left: 10px;
-  height: 5px;
-  width: 5px;
+.text {
+  width: 50%;
+  padding: 0px 10px 10px 10px;
 }
 
 .popu a {
   text-decoration: none;
 }
 
-.popu i,
-.activites i {
-  color: #0065fc;
+/* ACTIVITE */
+
+.activites {
+  margin-bottom: 60px;
+}
+
+.actiflex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.actitab {
+  border-radius: 20px;
+  box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .activites img {
   height: 444.51px;
   width: 302px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
+}
+
+.activites h4 {
+  margin-left: 15px;
+}
+
+/*FOOTER*/
+
+.partie {
+  display: flex;
+  background-color: #d9d9d9;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+}
+
+.partieflex {
+  width: 33%;
+}
+
+.partie li {
+  list-style-type: none;
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
+.partie a {
+  text-decoration: none;
+  color: #000000;
 }
