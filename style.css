@@ -19,7 +19,6 @@
 .logo {
   position: absolute;
   width: 61.09px;
-  height: 19px;
 }
 /* MENU */
 .menu {
@@ -317,4 +316,77 @@
   list-style-type: none;
   margin-left: -40px;
   margin-bottom: 10px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+  .body {
+    padding: 0px;
+  }
+
+  .logo {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+
+  .menu {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+
+  .menu-item a:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+    padding-bottom: 25px;
+  }
+
+  /* Make the search bar take up the full width of the screen */
+  .recherche {
+    width: 100%;
+  }
+
+  .bouton {
+    /* styles pour les écrans de téléphone portable */
+    display: inline-block;
+    border: none;
+    padding: 0;
+  }
+  .bouton i {
+    /* styles pour l'icône de la loupe */
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #0065fc;
+  }
+
+  /* Reduce the font size of the page titles */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* Reduce the size of the filter list */
+  .listebalise {
+    font-size: 0.9em;
+  }
+
+  /* Make the hotel cards stack vertically instead of appearing side by side */
+  .hebergflex {
+    flex-direction: row;
+  }
+
+  .logements {
+    flex-direction: column;
+  }
+
+  .popu {
+    order: -1;
+  }
 }
