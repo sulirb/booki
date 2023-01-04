@@ -16,7 +16,7 @@
 }
 /* LOGO */
 
-.logo img {
+.logo {
   position: absolute;
   width: 61.09px;
   height: 19px;
@@ -27,12 +27,12 @@
   justify-content: flex-end;
 }
 
-.menu li {
+.menu-item {
   list-style-type: none;
   margin-right: 40px;
 }
 
-.menu a {
+.ancre {
   text-decoration: none;
   color: #000000;
 }
@@ -49,7 +49,7 @@
   margin-top: 63px;
 }
 
-.intro p {
+.tagline {
   margin-top: -10px;
 }
 
@@ -68,7 +68,7 @@
   justify-content: space-around;
 }
 
-.recherche input {
+.saisie {
   width: 225px;
   height: 49px;
   font-size: 18px;
@@ -82,7 +82,7 @@
   padding-left: 15px;
 }
 
-.recherche button {
+.bouton {
   position: absolute;
   width: 132px;
   height: 49px;
@@ -123,7 +123,7 @@
   line-height: 20px;
 }
 
-.balise i {
+.balise .descri {
   margin-left: 8px;
   margin-right: 15px;
   vertical-align: middle;
@@ -141,18 +141,13 @@
   margin-bottom: 50px;
 }
 
-.info i {
+.info .icon {
   border-radius: 50px;
   border: 1px solid #d9d9d9;
   margin-right: 10px;
   padding: 5px 8px 5px 8px;
   color: #0065fc;
   font-size: 12px;
-}
-
-.mystar {
-  font-size: 12px;
-  color: #0065fc;
 }
 
 /* CONTENEUR*/
@@ -165,6 +160,12 @@
 .etoile {
   display: flex;
   flex-direction: row;
+  font-size: 12px;
+  color: #0065fc;
+}
+
+.ancreimg {
+  text-decoration: none;
 }
 
 /*HEBERGEMENT*/
@@ -189,7 +190,7 @@
   background-color: #ffffff;
 }
 
-.heberg img {
+.hebergimg {
   width: 246px;
   height: 124px;
   object-fit: cover;
@@ -197,14 +198,14 @@
   border-radius: 20px 20px 0px 00px;
 }
 
-.heberg h4 {
+.nom-hotel {
   padding-left: 10px;
   margin-top: 5px;
   font-weight: 700;
   color: #000000;
 }
 
-.heberg p {
+.prix-hotel {
   padding-left: 10px;
   margin-top: -15px;
   color: #000000;
@@ -213,10 +214,6 @@
 .heberg .etoile {
   padding: 0px 0px 10px 10px;
   margin-top: -10px;
-}
-
-.hebergtab a {
-  text-decoration: none;
 }
 
 /*POPULAIRE*/
@@ -248,7 +245,7 @@
   color: #0065fc;
 }
 
-.popu img {
+.popuimg {
   width: 40%;
   height: 144px;
   object-fit: cover;
@@ -261,8 +258,16 @@
   padding: 0px 10px 10px 10px;
 }
 
-.popu a {
-  text-decoration: none;
+.prix-popu {
+  margin-top: -15px;
+}
+
+.soleileau {
+  margin-bottom: 35px;
+}
+
+.bleuetblanc {
+  margin-bottom: 55px;
 }
 
 /* ACTIVITE */
@@ -283,14 +288,14 @@
   box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
-.activites img {
+.activitesimg {
   height: 444.51px;
   width: 302px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
-.activites h4 {
+.lieu {
   margin-left: 15px;
 }
 
@@ -298,7 +303,7 @@
 
 .partie {
   display: flex;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   padding-top: 30px;
   padding-bottom: 40px;
   padding-left: 70px;
@@ -308,13 +313,8 @@
   width: 33%;
 }
 
-.partie li {
+.footer-item {
   list-style-type: none;
   margin-left: -40px;
   margin-bottom: 10px;
-}
-
-.partie a {
-  text-decoration: none;
-  color: #000000;
 }
