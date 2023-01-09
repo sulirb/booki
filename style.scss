@@ -108,7 +108,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 15px;
 }
 
@@ -166,7 +166,12 @@
   color: #0065fc;
 }
 
-.ancreimg {
+.mystarg {
+  color: #f2f2f2;
+}
+
+.ancreimg,
+.ancreimg2 {
   text-decoration: none;
 }
 
@@ -179,13 +184,14 @@
 }
 
 .hebergflex {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .hebergtab {
+  display: grid;
+  height: 220px;
   border: 2px solid #ffffff;
   border-radius: 20px;
   box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.2);
@@ -193,11 +199,11 @@
 }
 
 .hebergimg {
-  width: 246px;
-  height: 124px;
+  width: 100%;
+  height: 126px;
   object-fit: cover;
   border: 2px solid #ffffff;
-  border-radius: 20px 20px 0px 00px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .nom-hotel {
@@ -228,25 +234,21 @@
 
 /*POPULAIRE*/
 .popu {
-  padding: 12px 50px 12px 40px;
+  padding: 12px 40px 12px 40px;
   background-color: #f2f2f2;
   border-radius: 20px;
-  width: 34%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 35%;
 }
 
 .poputab {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   margin-bottom: 30px;
   border: 2px solid #ffffff;
   border-radius: 20px;
   box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   color: #000000;
+  height: 160px;
 }
 
 .titre {
@@ -267,14 +269,13 @@
 
 .popuimg {
   width: 40%;
-  height: 144px;
+  height: 100%;
   object-fit: cover;
   border: 2px solid #ffffff;
   border-radius: 20px 0px 0px 20px;
 }
 
 .popu .text {
-  width: 50%;
   padding: 0px 10px 10px 10px;
 }
 
@@ -283,13 +284,8 @@
   font-size: 15px;
 }
 
-.soleil,
-.coeureau {
-  margin-bottom: 35px;
-}
-
-.bleuetblanc {
-  margin-bottom: 55px;
+.marque-popu {
+  height: 115px;
 }
 
 /* ACTIVITE */
@@ -306,13 +302,14 @@
 }
 
 .actitab {
+  width: 23%;
   border-radius: 20px;
   box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .activitesimg {
-  height: 444.51px;
-  width: 302px;
+  height: 444px;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -346,9 +343,82 @@
   color: #000000;
 }
 
+/******************************** TABLETTE *******************************/
+
+@media screen and (max-width: 992px) {
+  /* FILTRE */
+
+  .balise {
+    margin: 0;
+  }
+
+  .listebalise {
+    justify-content: 0;
+  }
+
+  /* LOGEMENT */
+  .logements {
+    flex-direction: column;
+  }
+
+  .etoile {
+    font-size: 0.7em;
+  }
+
+  /* HEBERGEMENT */
+  .heberg {
+    width: 100%;
+  }
+
+  /* POPULAIRE */
+  .popu {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .popuflex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .poputab {
+    height: 140px;
+  }
+
+  .ancreimg2 {
+    width: 33%;
+  }
+
+  .marque-popu {
+    height: 100px;
+  }
+
+  .nom-popu,
+  .prix-popu {
+    font-size: 0.8em;
+  }
+
+  /* ACTIVITES */
+
+  .activitesimg {
+    height: 250px;
+  }
+
+  .lieu {
+    font-size: 0.9em;
+    margin-block: 0;
+    padding: 10px;
+  }
+
+  /* FOOTER */
+  .partieflex {
+    font-size: 0.9em;
+  }
+}
 /********************************* MOBILE ******************************************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .body {
     padding: 0px;
     margin: 0px;
