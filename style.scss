@@ -16,7 +16,7 @@
 }
 /* LOGO */
 
-.logo {
+.logoimg {
   position: absolute;
   width: 61px;
 }
@@ -144,12 +144,12 @@
 }
 
 .info .icon {
-  border-radius: 50px;
+  border-radius: 50%;
   border: 1px solid #d9d9d9;
   margin-right: 10px;
   padding: 5px 8px 5px 8px;
   color: #0065fc;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* CONTENEUR*/
@@ -220,16 +220,16 @@
   color: #000000;
 }
 
+.heberg .text {
+  width: 100%;
+}
+
 .heberg .etoile {
   padding: 0px 0px 10px 10px;
 }
 
 .afficher {
   margin-top: 40px;
-}
-
-.heberg .text {
-  width: 100%;
 }
 
 /*POPULAIRE*/
@@ -256,7 +256,7 @@
   width: 100%;
 }
 
-.titre h2 {
+.titre-popu {
   flex-grow: 1;
 }
 
@@ -264,7 +264,6 @@
   display: flex;
   align-items: center;
   color: #0065fc;
-  margin-left: 130px;
 }
 
 .popuimg {
@@ -352,10 +351,6 @@
     margin: 0;
   }
 
-  .listebalise {
-    justify-content: 0;
-  }
-
   /* LOGEMENT */
   .logements {
     flex-direction: column;
@@ -425,11 +420,15 @@
   }
 
   /*LOGO*/
+  .entete {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
   .logo {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 150px;
+    display: flex;
+    justify-content: space-around;
   }
 
   /*MENU*/
@@ -437,28 +436,46 @@
   .menu {
     padding: 0;
     margin-top: 50px;
+    width: 100%;
     justify-content: space-between;
   }
 
-  .menu-item {
-    padding: 0;
+  .menu__item {
+    text-align: center;
     width: 50%;
+    padding: 0px 0px 20px 0px;
+    margin: 0;
+    border-bottom: 3px solid #f2f2f2;
   }
 
-  .menu-item a:hover {
-    color: #0065fc;
-    border-bottom: 3px solid #0065fc;
+  .menu__item:hover {
+    border-bottom-color: #0065fc;
+  }
+
+  .menu__ancre:hover {
     border-top: none;
   }
 
-  .ancre {
-    padding: 30px;
+  .menu__ancre {
+    border-top: none;
   }
 
   /*RECHERCHE*/
 
   .intro {
-    margin: 63px 15px 0px 15px;
+    margin: 20px 15px 0px 15px;
+  }
+
+  .recherche {
+    width: 82%;
+  }
+
+  .formulaire {
+    width: 100%;
+  }
+
+  .saisie {
+    width: 100%;
   }
 
   .bouton {
@@ -468,15 +485,11 @@
     padding: 0;
   }
 
-  .bouton i {
-    font-size: 24px;
-    color: #ffffff;
-    background-color: #0065fc;
-  }
-
   .bouton .loupe {
     display: block;
     font-size: 17px;
+    color: #ffffff;
+    background-color: #0065fc;
   }
 
   .bouton .search {
@@ -496,8 +509,8 @@
   }
 
   .balise {
-    font-size: 11px;
-    width: 42%;
+    font-size: 12px;
+    width: 45%;
   }
 
   .balise .descri {
@@ -505,7 +518,8 @@
   }
 
   .info {
-    margin: 0px 15px 50px 15px;
+    align-items: flex-start;
+    margin: 0px 15px 20px 15px;
   }
 
   /*LOGEMENTS*/
@@ -524,19 +538,18 @@
     border-radius: 0;
   }
 
-  .titre,
-  .popuflex {
-    margin: 0px 15px;
+  .popu .titre {
+    margin: 0px 10px;
+    width: 95%;
   }
 
-  .popu .graph {
-    margin-left: 90px;
+  .popuflex {
+    margin: 0px 10px;
+    display: block;
   }
 
   /*HEBERGMENT*/
-  .ancreimg {
-    width: 320px;
-  }
+
   .heberg {
     padding: 0;
     margin: 20px 15px 0px 15px;
@@ -545,7 +558,9 @@
   }
 
   .hebergflex {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .hebergimg {
@@ -561,12 +576,13 @@
   .activites {
     margin: 0px 15px 40px 15px;
   }
+
   .actitab {
+    width: 100%;
     margin-bottom: 50px;
   }
   .activitesimg {
     height: 145px;
-    width: 346px;
   }
 
   /*FOOTER*/
