@@ -3,11 +3,12 @@
   <head>
     <title>BOOKI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+
     <script
       src="https://kit.fontawesome.com/84da0323c7.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
   </head>
   <body class="body">
@@ -36,23 +37,22 @@
     <section class="intro">
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
       <p class="intro_p">En plein centre ville ou en pleine nature</p>
-      <div class="search">
+
+      <form class="search" action="/search">
         <div class="search__loca">
-          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-location-dot fix-icon"></i>
         </div>
-        <form class="search__form" action="/search">
-          <input
-            class="search__saisie"
-            type="text"
-            name="query"
-            placeholder="Marseille, France"
-          />
-          <button class="search__bouton" type="submit">
-            <span class="search__span">Rechercher</span
-            ><i class="fa-solid fa-magnifying-glass loupe"></i>
-          </button>
-        </form>
-      </div>
+        <input
+          class="search__saisie"
+          type="text"
+          name="query"
+          placeholder="Marseille, France"
+        />
+        <button class="search__bouton" type="submit">
+          <span class="search__span">Rechercher</span
+          ><i class="fa-solid fa-magnifying-glass loupe"></i>
+        </button>
+      </form>
     </section>
 
     <!--FILTRES et INFO-->
@@ -61,19 +61,19 @@
         <h3>Filtres</h3>
         <ul class="filtre__listebalise">
           <li class="filtre__balise">
-            <i class="fa-solid fa-money-bill-wave descri"></i>
+            <i class="fa-solid fa-money-bill-wave fix-icon descri"></i>
             <span>Economique</span>
           </li>
           <li class="filtre__balise">
-            <i class="fa-solid fa-person descri"></i>
+            <i class="fa-solid fa-person fix-icon descri"></i>
             <span>Famillal</span>
           </li>
           <li class="filtre__balise">
-            <i class="fa-solid fa-heart descri"></i>
+            <i class="fa-solid fa-heart fix-icon descri"></i>
             <span>Romantique</span>
           </li>
           <li class="filtre__balise">
-            <i class="fa-solid fa-dog descri"></i>
+            <i class="fa-solid fa-dog fix-icon descri"></i>
             <span>Animaux autorisés</span>
           </li>
         </ul>
@@ -88,7 +88,7 @@
     <!-- HEBERGEMENT -->
     <div class="logements">
       <section class="heberg">
-        <h2 id="hebergement">Hébergements à Marseille</h2>
+        <h2 class="heberg__titre">Hébergements à Marseille</h2>
         <div class="heberg__flex">
           <a class="heberg__ancre" href="#"
             ><article class="heberg__tab">
@@ -228,7 +228,7 @@
       <section class="popu">
         <div class="popu__titre">
           <h2 class="popu__titre__h2">Les plus populaires</h2>
-          <i class="fa-solid fa-chart-line graph"></i>
+          <i class="fa-solid fa-chart-line graph fix-icon"></i>
         </div>
         <div class="popu__flex">
           <a class="popu__ancre" href="#"
