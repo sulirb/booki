@@ -1,7 +1,0 @@
-/* pour voir ce qui dépasse*/
-*,
-*:before,
-*:after {
-  outline: 1px solid red;
-}
-/**/
