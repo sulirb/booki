@@ -72,7 +72,7 @@
   font-size: 18px;
   border: 1px solid #f2f2f2;
 }
-.search__form ::placeholder {
+.search__saisie::placeholder {
   font-weight: 700;
   font-family: Raleway;
   color: #000000;
@@ -175,14 +175,15 @@
 }
 .heberg__flex {
   display: grid;
-  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 20px;
 }
 .heberg__ancre {
   text-decoration: none;
 }
 .heberg__tab {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 220px;
   border: 2px solid #ffffff;
   border-radius: 20px;
@@ -320,7 +321,7 @@
     width: 61%;
   }
   .heberg__flex {
-    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   }
   .popu {
     width: 37%;
@@ -344,7 +345,7 @@
     width: 100%;
   }
   .heberg__flex {
-    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   }
   .heberg__tab {
     align-content: space-evenly;
@@ -368,7 +369,8 @@
   .popu__marque {
     height: 100px;
   }
-  .popu__nom, .popu__prix {
+  .popu__nom,
+  .popu__prix {
     font-size: 0.8em;
   }
   /* ACTIVITES */
