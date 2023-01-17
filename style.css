@@ -523,7 +523,7 @@
   }
   /*FOOTER*/
   .pied {
-    display: block;
+    flex-direction: column;
     padding: 30px 15px;
   }
   .pied__flex {
