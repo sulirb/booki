@@ -449,7 +449,7 @@
   }
   /*FILTRE ET INFO*/
   .filtre {
-    display: block;
+    flex-wrap: wrap;
     margin: 20px 0px 0px 15px;
   }
   .filtre__listebalise {
@@ -457,7 +457,7 @@
     padding-inline-start: 0;
   }
   .filtre__balise {
-    font-size: 12px;
+    font-size: 15px;
     width: 45%;
   }
   .filtre__balise .descri {
@@ -530,5 +530,3 @@
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
