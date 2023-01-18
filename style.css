@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 .body {
+  max-width: 1400px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   padding: 25px 50px 0px;
   font-family: Raleway, sans-serif;
 }
