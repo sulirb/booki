@@ -472,7 +472,6 @@
   }
   /*CONTENEUR*/
   .logements {
-    flex-direction: column;
     margin-bottom: 100px;
   }
   /*POPULAIRE*/
