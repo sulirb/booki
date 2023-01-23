@@ -37,7 +37,7 @@
 }
 .menu__item {
   list-style-type: none;
-  margin-right: 40px;
+  margin-left: 40px;
 }
 .menu__ancre:hover {
   color: #0065fc;
@@ -47,6 +47,7 @@
 .menu__ancre {
   text-decoration: none;
   color: #000000;
+  padding: 0px 20px;
 }
 
 /*INTRO*/
